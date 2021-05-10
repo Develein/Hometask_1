@@ -5,3 +5,353 @@ body {
     font-weight: 300;
     line-height: 17px;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background: transparent;
+    border: none;
+}
+
+.header__person {
+    margin: 0 33px 0 33px;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+}
+
+.brand__img {
+    display: block;
+    float: right;
+}
+
+.brand__img-container {
+    width: 50%;
+}
+
+.brand__title-container {
+    background: #F1E4E6;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.brand__title {
+    margin: 0 0 0 92px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+}
+
+.brand__sub-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.brand__pink-sub-title {
+    color: #F16D7F;
+}
+
+.promotions__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 65px 0 66px 0;
+}
+
+.promotions__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+
+.promotions__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promotions__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #F16D7F;
+}
+
+.promotions__item--woman {
+    background-image: url(../img/promotions-girl-1.jpg);
+    background-size: cover;
+}
+
+.promotions__item--man {
+    background-image: url(../img/promotions-man-1.jpg);
+    background-size: cover;
+}
+
+.promotions__item--kids {
+    background-image: url(../img/promotions-kid-1.jpg);
+    background-size: cover;
+}
+
+.promotions__item--accesories {
+    background-image: url(../img/promotions-accesories-1.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #222222;
+}
+
+.products__text {
+    font-weight: 400;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px 0 18px 0;
+}
+
+.products__item {
+    width: 360px;
+    margin: 0 0 30px 0;
+}
+
+.product__img {
+    display: block;
+}
+
+.product__description {
+    background: #F8F8F8;
+    padding: 25px 29px 20px 17px;
+}
+
+.product__title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product__text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #5D5D5D;
+    margin: 13px 0 18px 0;
+}
+
+.product__price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left; 
+    color: #F16D7F; 
+}
+
+.product__button {
+    display: none;
+}
+
+.products__button {
+    padding: 15px 39px 14px 39px;
+    color: #FF6A6A;
+    background-color: white;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.advantages {
+    background: #222224;
+    padding: 103px 0 104px 0;
+    margin: 95px 0 0 0;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__img {
+    display: block;
+}
+
+.advantages__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.advantages__text {
+    line-height: 17px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.footer__subscribe {
+    min-height: 448px;
+    background: url(../img/subscribe-bg.jpg);
+    background-size: cover;
+}
+
+.footer__subscribe-transparent {
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 448px;
+}
+
+.subscribe__info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__info-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin: 30px 0 0 0;
+}
+
+.subscribe__info-sub-text {
+    font-style: italic;
+}
+
+.subscribe__form {
+    width: 360px;
+}
+
+.subscribe__form-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222224;
+}
+
+.subscribe__form-sub-title {
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__copyright {
+    background: #222224;
+    min-height: 80px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FBFBFB;
+    margin: 30px 0 30px 0;
+}
+
+.copyright__list {
+    display: flex;
+    margin: 24px 0 23px 0;
+}
+
+.copyright__item {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 7px;
+}
+
+.copyright__link {
+    display: block;
+}
