@@ -26,10 +26,6 @@ body {
     background-color: #222222;
 }
 
-.header__navigation {
-    display: none;
-}
-
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -41,13 +37,36 @@ body {
     margin: 0 41px 0 0;
 }
 
+.header__loupe {
+    background: transparent;
+    border: none;   
+}
+
 .header__button {
     background: transparent;
     border: none;
 }
 
+.header__button-icon,
+.header__person-icon,
+.header__cart-icon,
+.header__loupe-icon {
+    fill: #E8E8E8;
+}
+
+.header__button-icon:hover,
+.header__person-icon:hover,
+.header__cart-icon:hover,
+.header__loupe-icon:hover {
+    fill: #F16D7F;
+}
+
 .header__person {
     margin: 0 33px 0 33px;
+}
+
+.header__navigation {
+    display: none;
 }
 
 .brand {
@@ -76,6 +95,16 @@ body {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
+    position: relative;
+}
+
+.brand__title::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    width: 12px;
+    height: 92px;
+    background: #F16D7F;
 }
 
 .brand__sub-title {
@@ -178,6 +207,51 @@ body {
     display: block;
 }
 
+.product {
+    position: relative;
+}
+
+.product::before {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56);
+    opacity: 0;
+}
+
+.product:hover::before {
+    opacity: 0.87;
+}
+
+.product:hover .product__button {
+    opacity: 1;
+}
+
+.product__button {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    display: flex;
+    background: none;
+    border: 1px solid #FFFFFF;
+    align-items: center;
+    padding: 0;
+    width: 138px;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0;
+
+}
+
+.product__button-icon {
+    fill: #FFFFFF;
+    margin: 0 11px 0 13px;
+}
+
 .product__description {
     background: #F8F8F8;
     padding: 25px 29px 20px 17px;
@@ -207,10 +281,6 @@ body {
     color: #F16D7F; 
 }
 
-.product__button {
-    display: none;
-}
-
 .products__button {
     padding: 15px 39px 14px 39px;
     color: #FF6A6A;
@@ -219,6 +289,12 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+}
+
+.products__button:hover {
+    color: white;
+    background-color: #FF6A6A;
+    border: 1px solid #FF6A6A;
 }
 
 .advantages {
@@ -296,10 +372,13 @@ body {
 }
 
 .subscribe__form {
-    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subscribe__form-title {
+        width: 360px;
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
@@ -316,6 +395,41 @@ body {
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.subscribe__form-button {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+#subscribe__form-email {
+    border: 0;
+    height: 49px;
+    width: 256px;
+    background: #E1E1E1;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 0 0 0 22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    outline: none;
+    color: #222224;
+}
+
+.subscribe__form-submit {
+    border: 0;
+    height: 49px;
+    width: 100px;
+    background: #E05C6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+
 }
 
 .footer__copyright {
@@ -354,4 +468,12 @@ body {
 
 .copyright__link {
     display: block;
+}
+
+.copyright__item:hover {
+    background: #F16D7F;
+}
+
+.copyright__item:hover .copyright__item-icon {
+    fill: #FFFFFF;
 }
