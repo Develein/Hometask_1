@@ -207,11 +207,11 @@ body {
     display: block;
 }
 
-.product {
+.product__img-container {
     position: relative;
 }
 
-.product::before {
+.product__img-container::before {
     content: '';
     position: absolute;
     width: 360px;
@@ -220,11 +220,11 @@ body {
     opacity: 0;
 }
 
-.product:hover::before {
+.product__img-container:hover::before {
     opacity: 0.87;
 }
 
-.product:hover .product__button {
+.product__img-container:hover .product__button {
     opacity: 1;
 }
 
